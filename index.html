@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: O;
+        padding: O;
+      }
+      .container {
+        margin: 10px 60px;
+      }
+      .form-group {
+        margin: 10px;
+      }
+      input {
+        width: 20%;
+        border: solid 5px #eee;
+        padding: 10px 5px;
+      }
+      button {
+        width: 200px;
+        padding: 15px;
+        margin-right: 0 auto;
+        background: #fff;
+        color: darkorange;
+        border: solid 1px;
+        border-radius: 35px;
+        cursor: pointer;
+        transition: all 0.38s ease-in-out;
+        text-decoration: none;
+      }
+      button:hover {
+        background: dodgerblue;
+        color: #fff;
+      }
+      table tr td {
+        border: solid 1px #eee;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Login</h1>
+      <form action="/project/index2.html" role="form" onsubmit="login(event);">
+        <div class="form-group">
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Name"
+            required
+          /><br />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            id="phonenumber"
+            name="Phn no"
+            placeholder="Phone number"
+            required
+          /><br />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            id="email"
+            name="Email"
+            placeholder="Email"
+            required
+          /><br />
+        </div>
+
+        <!-- <button ><a href="/project/index2.html"> </button> -->
+        <!-- <button type="submit"
+          onclick=>
+          Login
+        </button> -->
+
+        <button><a href="index2.html"> login</a></button>
+      </form>
+    </div>
+  </body>
+</html>
